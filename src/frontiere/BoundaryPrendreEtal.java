@@ -10,10 +10,13 @@ public class BoundaryPrendreEtal {
 	}
 
 	public void prendreEtal(String nomVendeur) {
-		//TODO a completer
+		
 	}
 
 	private void installerVendeur(String nomVendeur) {
-		//TODO a completer
+		String produit = Clavier.entrerChaine("C'est parfait, il me reste un étal pour vous!\nil me faudrait quelques renseignements :\nQuel produit souhaitez-vous vendre ?");
+		int nbProduit = Clavier.entrerEntier("Conbien souhaitez-vous vendre ?");
+		controlPrendreEtal.prendreEtal(nomVendeur, produit, nbProduit);
+		
 	}
 }
